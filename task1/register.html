@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <Link rel="stylesheet" href="style.css">
+</head>
+<body id="reg-p">
+    <form action="success.html">
+        <div class="container">
+            <h1>Registration Page</h1><br>
+            <p>Fill out the form carefully for registeration!</p>
+            <hr><br>
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="Susan" name="fname" id="fname" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" placeholder="Ade" name="lastname" id="lastname" required>
+            <label for="pnumber">Phone Number:</label>
+            <input type="number" placeholder="08077889900" name="pnumber" id="pnumber" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="alayazainab@gmail.com" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password"  placeholder="Enter Password" name="password" autocomplete="current-password" id="password" required>
+            <label for="dob">Date of Birth</label>
+            <input type="date" placeholder="01-07-1999" name="dob" id="dob" max="2006-01-01" min="1993-01-01" required>
+            <label for="gender"> Select your gender</label>
+            <select name="gender">
+                <option value="none" selected>None</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="color">Color</label>
+            <input type="color" id="color" value="#000000"><br>
+            <h6>By registering, you agree to the<a href="#">Terms&Condition</a></h6><br>
+            <button class="registerbtn">Register</button>
+        </div>
